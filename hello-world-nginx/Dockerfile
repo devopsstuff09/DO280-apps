@@ -1,5 +1,4 @@
-FROM registry.access.redhat.com/nginx:latest
-
+FROM quay.io/nginx:latest
 RUN yum install -y --disableplugin=subscription-manager --nodocs nginx \
   && yum clean all
 
