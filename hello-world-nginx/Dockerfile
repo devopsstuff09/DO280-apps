@@ -1,6 +1,5 @@
 FROM docker.io/library/nginx:latest
-RUN yum install -y --disableplugin=subscription-manager --nodocs nginx \
-  && yum clean all
+
 
 ADD index.html /usr/share/nginx/html
 
