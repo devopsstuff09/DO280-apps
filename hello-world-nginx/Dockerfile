@@ -1,4 +1,4 @@
-FROM quay.io/nginx:latest
+FROM registry.fedoraproject.org/nginx:latest
 RUN yum install -y --disableplugin=subscription-manager --nodocs nginx \
   && yum clean all
 
